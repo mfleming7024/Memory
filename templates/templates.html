@@ -1,0 +1,128 @@
+<div>
+
+	<script type="text/template" id="template_landing_header">
+		<img src="images/logo.png" alt="blah" />
+		<h1>Memory</h1>
+		<form id="login_form">
+			<input type="text" id="username" placeholder="Username" />
+			<input type="password" id="password" placeholder="Password" />
+			<input type="submit" class="login" id="login_btn" value="Login" />
+		</form>
+	</script>
+
+	<script type="text/template" id="template_landing">
+		<div class="cta">
+			<div class="register_title">
+				<h1>Create your <b>free</b> account!</h1>
+				<img src="images/user.png" />
+			</div>
+			<div class="register">
+				<form id="register_form" method="post">
+					<input type="text" id="r_user_name" placeholder="Username" />
+					<input type="password" id="r_password" placeholder="Password" />
+					<input type="email" id="r_email" placeholder="E-mail" />
+					<input type="submit" id="r_submit" class="sign_up" />
+				</form>
+			</div>
+		</div>
+		
+		<hr />
+		
+		<div class="information">
+			<div class="column">
+				<h2>Keep everything synced</h2>
+				<img src="images/sync.png" />
+				<p>By keeping everything stored in one location it is easy to push or pull from our central server in order to keep everything synced so you never have to worry.</p>
+			</div>
+			<div class="column">
+				<h2>Easy to use interface</h2>
+				<img src="images/ui.png" />
+				<p>Memory allows you to interact with all of your projects in the simplest way possible. Everything was designed specifically with the user in mind</p>
+			</div>
+			<div class="column">
+				<h2>Manage all your projects</h2>
+				<img src="images/manage.png" />
+				<p>Memory can be used as a tool to manage all of your projects in one place. You are able to add, edit and delete existing or new projects.</p>
+			</div>
+			<div class="additional">
+				<h2>As seen on</h2>
+				<hr />
+				<img src="images/cnet.png" id="first" />
+				<img src="images/engadget.png" />
+				<img src="images/techcrunch.png" />
+				<img src="images/gizmodo.png" />
+				<div class="gallery">
+					<ul>
+						<li><img src="images/1.jpg"></li>
+						<li><img src="images/2.jpg"></li>
+						<li><img src="images/3.jpg"></li>
+						<li><img src="images/4.jpg"></li>
+						<li><img src="images/5.jpg"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</script>
+	
+	<script type="text/template" id="template_header">
+				<div id="application_project">
+					<img src="images/logo.png" />
+					<img src="images/user.png" id="user" />
+					<h1>{{=first_name}}</h1>
+					<p><a href="#" data-reveal-id="editAccountModal" id="accountBtn">My Account</a></p><p><a href="#" id="logoutBtn">Log out</a></p>
+					<a href="#" data-reveal-id="newProjectModal"><img src="images/new_project.png" id="new" /></a>
+				</div>
+	</script>
+	
+	<script type="text/template" id="template_task_header">		
+				<div id="application_project">
+					<a href="#" id="back"><img src="images/back.png" id="back" /></a>
+					<h1 class="project_title">{{=projectName}}</h1>
+					<p><a href="#" data-reveal-id="editAccountModal">My Account</a></p><p><a href="#" id="logoutBtn">Log out</a></p>
+					<a href="#" data-reveal-id="newTaskModal"><img src="images/new_project.png" id="new" /></a>
+				</div>
+	</script>
+	
+	<script type="text/template" id="template_task_link">
+		<div>	
+			<div class="task">
+				<div class="priority"><img src="images/urgent.png"></div>
+				<h4>{{=taskName}}</h4>
+				<div class="controls">
+					<a href="#" class="editTask" data-reveal-id="editTaskModal"><img src="images/edit.png"></a>
+					<a href="#" class="deleteTask"><img src="images/delete.png"></a>
+				</div>
+				<p>Due {{=dueDate}}</p>
+			</div>
+			<div class="task_specs">
+				<div class="specs">
+					<h5>Task Details</h5>
+					<hr />
+					<ul class="task_steps">
+						<li>{{=taskDescription}}</li>
+					</ul>
+				</div>
+				<ul class="contact_info"> 
+					<li><img src="images/user.png"><p>{{=clientName}}</p></li>
+					<li><img src="images/mail.png"><p>No Email Given</p></li>
+					<li><img src="images/phone.png"><p>No Phone Given</p></li>
+				</ul>		
+			</div>	
+		</div>
+	</script>
+	
+	
+	<script type="text/template" id="template_project_link">
+		<div class="project">
+			<div class="priority"><img src="images/urgent.png"></div>
+			<h4>{{=projectName}}</h4>
+			<div class="controls">
+				<a href="#" class="edit" data-reveal-id="editProjectModal"><img src="images/edit.png"></a>
+				<a href="#" class="delete"><img src="images/delete.png"></a>
+			</div>
+			<p>{{=dueDate}}</p>
+		</div>
+	</script>
+
+	
+</div>

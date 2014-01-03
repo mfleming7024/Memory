@@ -1,0 +1,575 @@
+css /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	background: url("../images/grey_wall.png") repeat;
+}
+
+body {
+	width: 960px;
+	overflow: hidden;
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0px 0px 30px black;
+}
+
+b {
+	font-weight: bold;
+}
+
+/*!body*/
+
+#header {
+	float: left;
+	width: 100%;
+	background-image: url("../images/dark_linen.png");
+	background-repeat: repeat;
+	padding: 5px 0;
+	height: 57px;
+}
+
+#header * {
+	float: left;
+}
+
+#header form {
+	float: right;
+	margin: 10px 10px 0 0;
+}
+
+#header form input[type='text'], input[type='password'] {
+	margin: 4px 3px 0 0;
+	height: 20px;
+}
+
+#header img {
+	margin: 0 0 0 7px;
+}
+
+#header h1 {
+	font: 40px "Nexa Light";
+	padding: 10px 0 0 5px;
+	width: 350px;
+	color: white;
+}
+
+div.gallery {
+	width: 100%;
+	float: left;
+	margin: 0 auto;
+}
+
+div.gallery ul {
+	width: 85%;
+	margin: 0 auto;
+}
+
+div.cta {
+	float:left;
+	width: 100%;
+	height: 350px;
+	background: url("../images/cta_bg.png") repeat;
+}
+
+/*!register*/
+
+div.cta .register_title {
+	float: right;
+	width: 100%;
+	margin: 40px 15px 0 40px;
+}
+
+div.cta .register_title h1 {
+	float: right;
+	font: 24px "Gill Sans Mt";
+}
+
+div.cta .register_title img {
+	float: right;
+	width: 20px;
+}
+
+div.cta .register {
+	width: 300px;
+	height: 220px;
+	overflow: hidden;
+	float: right;
+	margin-right: 10px;
+	background: url("../images/dark_linen.png") repeat;
+	box-shadow: 2px 2px 3px 1px black
+}
+
+div.cta .register form {
+	padding: 30px 0;
+}
+
+div.cta .register input {
+	float: left;
+	width: 75%;
+	height: 30px;
+	font: 18px "Gill Sans Mt";
+	margin: 5px 0 0 38px;
+}
+
+div.cta .register input[type='submit'] {
+	width: 40%;
+	height: 45px;
+	margin-top: 15px;
+	float: right;
+	clear: both;
+}
+
+div.additional {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+div.additional h2 {
+	text-align: center;
+	padding-top: 15px;
+	font: 24px "Gill Sans Mt";
+}
+
+div.additional img {
+	float: left;
+	width: 160px;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+div.additional img#first {
+	margin-left: 140px;
+}
+
+div.additional hr {
+	width: 50%;
+	margin: 0 auto;
+}
+
+/*!columns*/
+
+div.column {
+	float: left;
+	width: 310px;
+	padding: 20px 5px 0 5px;
+}
+
+div.column h2 {
+	text-align: center;
+	font: 24px "Gill Sans MT";
+}
+
+div.column img {
+	display: block;
+	margin: 0 auto;
+	padding: 15px 0;
+}
+
+div.column p {
+	font: 14px "Lucida Grande";
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	background: black;
+	font: 14px "Lucida Grande";
+	color: white;
+}
+
+
+
+/*!APPLICATION*/
+
+#application_project img#new {
+	margin: 5px 0 0 70px;
+}
+
+#application_project img#back {
+	margin: 5px 20px 0 20px;
+}
+
+#application_project img#user {
+	margin: 5px 5px 0 210px;
+	border: 3px solid black;
+	box-shadow: 0px 0px 2px white;
+	width: 35px;
+}
+
+#application_project h1.project_title {
+	margin: 0 200px 0 0;
+	font-size: 36px;
+	width: 400px;
+}
+
+#application_project p {
+	margin: 19px 0 0 20px;
+	font: 14px "Nexa Light";
+}
+
+#application_project a {
+	text-decoration: none;
+	color: white;
+}
+
+div.alert {
+	text-align: center;
+	font: 24px "Gill Sans Mt";
+}
+
+div#urgent {
+	border-radius: 0;
+	background-color: red;
+}
+
+div#attention {
+	border-radius: 0;
+	background-color: yellow;
+}
+
+div#delayed {
+	border-radius: 0;
+}
+
+div#complete {
+	border-radius: 0;
+	background-color: green;
+}
+
+div.project {
+	width: 100%;
+	float: left;
+	height: 150px;
+	overflow: hidden;
+	background: -webkit-linear-gradient(#979797 0%, #757575 100%);
+	background: -moz-linear-gradient(#979797 0%, #757575 100%);
+	border-bottom: 1px solid black;
+}
+
+div.task {
+	float: left;
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	background: -webkit-linear-gradient(#979797 0%, #757575 100%);
+	background: -moz-linear-gradient(#979797 0%, #757575 100%);
+	border-bottom: 1px solid black;
+}
+
+div.task_specs {
+	clear: both;
+	float: left;
+	width: 94.8%;
+	padding: 20px 0;
+	background: url("../images/dark_linen.png") repeat;
+	color: white;
+	border-left: 50px solid rgba(255,0,0,0.3);
+}
+
+div.task_specs .specs {
+	width: 25%;
+	padding: 15px;
+	font: 12px "Lucida Grande";
+	overflow: hidden;
+	float: left;
+}
+
+div.task_specs h5 {
+	font: 20px "Nexa Light";
+	text-align: center;
+}
+
+div.task_specs hr {
+	clear: both;
+	width: 100%;
+	float: left;
+}
+
+div.task_specs ul.contact_info {
+	float: left;
+	width: 20%;
+	padding: 30px 0 0 400px;
+}
+
+div.task_specs ul.contact_info li {
+	font: 18px "Myriad Web Pro";
+	padding-top: 5px;
+	width: 100%;
+	float: left;
+}
+
+div.task_specs ul.contact_info li img {
+	display: inline;
+	float: left;
+	padding-right: 5px;
+}
+
+div.project * {
+	float: left;
+}
+
+div.task * {
+	float: left;
+}
+
+div.priority {
+	background-color: #aeaeae;
+	height: inherit;
+	width: 12%;
+}
+
+div.priority img {
+	position: relative;
+	top: 30px;
+	left: 15px;
+}
+
+div.project a h1 {
+	width: 300px;
+	color: black;
+}
+
+div.task a h1 {
+	width: 300px;
+	color: black;
+}
+
+div.project h4 {
+	margin: 40px 0 0 15px;
+	font: 26px "Gill Sans Mt";
+	width: 50%;
+}
+
+div.task h4 {
+	margin: 40px 0 0 15px;
+	font: 26px "Gill Sans Mt";
+	width: 50%;
+}
+
+div.project .controls {
+	float: right;
+	height: 95px;
+}
+
+div.task .controls {
+	float: right;
+	height: 95px;
+}
+
+div.project .controls img {
+	padding: 3px;
+	float: left;
+}
+
+div.task .controls img {
+	padding: 3px;
+	float: left;
+}
+
+div.project p {
+	clear: right;
+	float: right;
+	font: 24px "Gill Sans Mt";
+	padding: 20px 10px 0 10px;
+}
+
+div.task p {
+	clear: right;
+	float: right;
+	font: 24px "Gill Sans Mt";
+	padding: 20px 10px 0 10px;
+}
+
+/*!popup styles*/
+
+
+div.popup_new {
+	padding: 20px;
+	width: 90%;
+	margin: 0 auto;
+	background: url("../images/dark_linen.png") repeat;
+	color: white;
+	overflow: hidden;
+}
+
+div.popup_new h1 {
+	font: 36px "Myriad Web Pro";
+	float: left;
+	width: 90%;
+}
+
+div.popup_new hr {
+	width: 98%;
+}
+
+div.popup_new input[type="text"], div.popup_new input[type="password"], div.popup_new input[type="email"] {
+	float: left;
+	margin: 10px 0 10px 25px;
+	height: 29px;
+	width: 50%;
+}
+
+
+div.popup_new .buttons {
+	float: left;
+	width: 100%;
+	margin: 2px 0 10px 20px;
+}
+
+div.popup_new .buttons a {
+	padding: 5px;
+	font: 12px "Lucida Grande";
+	text-decoration: none;
+	color: black;
+}
+
+div.popup_new .buttons#project {
+	margin-top: 15px;
+}
+
+#urgent {
+	border: 2px outset red;
+	background: -webkit-linear-gradient(#ff0000 0%, #4e0000 100%);
+	background: -moz-linear-gradient(#ff0000 0%, #4e0000 100%);
+	border-radius: 5px;
+}
+
+#attention {
+	border: 2px outset orange;
+	background: -webkit-linear-gradient(#ffab00 0%, #824800 100%);
+	background: -moz-linear-gradient(#ffab00 0%, #824800 100%);
+	border-radius: 5px;
+}
+
+#delayed {
+	border: 2px outset yellow; 
+	background: -webkit-linear-gradient(#fbff00 0%, #917c00 100%);
+	background: -moz-linear-gradient(#fbff00 0%, #917c00 100%);
+	border-radius: 5px;	
+}
+
+#complete {
+	border: 2px outset green;
+	background: -webkit-linear-gradient(#0eff00 0%, #008f43 100%);
+	background: -moz-linear-gradient(#0eff00 0%, #008f43 100%);
+	border-radius: 5px;	
+}
+
+div.popup_new input[type="submit"] {
+	float: right;
+	margin-top: 20px;
+}
+
+
+/*!button styles*/
+
+.sign_up {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #08ff39), color-stop(1, #0d8502) );
+	background:-moz-linear-gradient( center top, #08ff39 5%, #0d8502 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#08ff39', endColorstr='#0d8502');
+	background-color:#08ff39;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:2px solid #0a8523;
+	display:inline-block;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 24px;
+	text-decoration:none;
+}.sign_up:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0d8502), color-stop(1, #08ff39) );
+	background:-moz-linear-gradient( center top, #0d8502 5%, #08ff39 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d8502', endColorstr='#08ff39');
+	background-color:#0d8502;
+}.sign_up:active {
+	position:relative;
+	top:1px;
+}
+
+.login {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffff0a), color-stop(1, #8a8a03) );
+	background:-moz-linear-gradient( center top, #ffff0a 5%, #8a8a03 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff0a', endColorstr='#8a8a03');
+	background-color:#ffff0a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:2px solid #b0bd00;
+	display:inline-block;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	font-weight:bold;
+	padding:5px 20px;
+	text-decoration:none;
+}.login:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8a8a03), color-stop(1, #ffff0a) );
+	background:-moz-linear-gradient( center top, #8a8a03 5%, #ffff0a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8a8a03', endColorstr='#ffff0a');
+	background-color:#8a8a03;
+}.login:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+

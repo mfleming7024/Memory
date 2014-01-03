@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Memory Task Management</title>
+<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/reveal.css" />
+</head>
+
+<body>
+
+<div id="header">
+	
+</div>
+
+<div id="container">
+	
+</div>
+
+
+<div id="newProjectModal" class="reveal-modal">
+		<div class="popup_new">
+			<h1>New Project</h1>
+			<a href="#" class="close-reveal-modal"><img src="images/delete.png"></a>
+			<hr />
+			
+			<form id="newPopup">
+				<input type="text" id="datePick" placeholder="Pick a Date">
+				<input type="text" id="p_name" placeholder="Project Name">
+				<input type="text" id="p_description" placeholder="Project Description">
+				
+				<div class="buttons" id="project">
+					<a href="#" id="urgent">Urgent</a>
+					<a href="#" id="attention">Active</a>
+					<a href="#" id="delayed">Delayed</a>
+					<a href="#" id="complete">Complete</a>
+				</div>
+				
+				<input type="submit" value="Submit" id="newProject" class="sign_up">
+			</form>
+		</div>
+</div>
+
+<div id="editProjectModal" class="reveal-modal">
+	<div class="popup_new">
+		<h1>Edit Project</h1>
+		<a href="#" class="close-reveal-modal"><img src="images/delete.png"></a>
+		<hr />
+		
+		<form id="newPopup">
+			<input type="text" id="ep_datePick" placeholder="Pick a Date">
+			<input type="text" id="ep_name" placeholder="Project Name">
+			<input type="text" id="ep_description" placeholder="Project Description">
+			
+			<div class="buttons" id="e_project">
+				<a href="#" id="urgent">Urgent</a>
+				<a href="#" id="attention">Active</a>
+				<a href="#" id="delayed">Delayed</a>
+				<a href="#" id="complete">Complete</a>
+			</div>
+			
+			<input type="submit" value="Submit" id="editedProject" class="sign_up">
+		</form>
+	</div>
+</div>
+
+<div id="newTaskModal" class="reveal-modal">
+	<div class="popup_new">
+		<h1>New Task</h1>
+		<a href="#" class="close-reveal-modal"><img src="images/delete.png"></a>
+		<hr />
+		
+		<form id="newPopup">
+			<input type="text" id="t_datePick" placeholder="Pick a Date">
+			<input type="text" id="t_name" placeholder="Task Name">
+			<input type="text" id="t_description" placeholder="Task Description">
+			
+			<div class="buttons" id="n_task">
+				<a href="#" id="urgent">Urgent</a>
+				<a href="#" id="attention">Active</a>
+				<a href="#" id="delayed">Delayed</a>
+				<a href="#" id="complete">Complete</a>
+			</div>
+			
+			<input type="submit" id="newTask" value="Submit" class="sign_up">
+		</form>
+	</div>
+</div>
+
+<div id="editTaskModal" class="reveal-modal">
+	<div class="popup_new">
+		<h1>Edit Task</h1>
+		<a href="#" class="close-reveal-modal"><img src="images/delete.png"></a>
+		<hr />
+		
+		<form id="newPopup">
+			<input type="text" id="et_datePick" placeholder="Pick a Date">
+			<input type="text" id="et_name" placeholder="Task Name">
+			<input type="text" id="et_description" placeholder="Task Description">
+			
+			<div class="buttons" id="e_task">
+				<a href="#" id="urgent">Urgent</a>
+				<a href="#" id="attention">Active</a>
+				<a href="#" id="delayed">Delayed</a>
+				<a href="#" id="complete">Complete</a>
+			</div>
+			
+			<input type="submit" id="editedTask" value="Submit" class="sign_up">
+		</form>
+	</div>
+</div>
+
+<div id="editAccountModal" class="reveal-modal">
+	<div class="popup_new">
+		<h1>Edit Info</h1>
+		<a href="#" class="close-reveal-modal"><img src="images/delete.png"></a>
+		<hr />
+		
+		<form id="newPopup">
+			<input type="text" id="newUsername" placeholder="New Username">
+			<input type="password" id="newPassword" placeholder="Enter Password">
+			<input type="email" id="newEmail" placeholder="New Email">
+			
+			<input type="submit" id="editAccountSubmit" value="Submit" class="sign_up">
+		</form>
+	</div>
+</div>
+
+<footer>
+	<p>Copyright &copy; 2013 Michael Fleming</p>
+</footer> 
+
+</body>
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="js/jsrender.min.js"></script>
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
